@@ -1429,6 +1429,7 @@ class ValueIteration(MDP):
 
             # Bellman Operator: compute policy and value functions
             self.policy, self.V = self._bellmanOperator()
+            print(_np.round(self.V,2))
 
             # The values, based on Q. For the function "max()": the option
             # "axis" means the axis along which to operate. In this case it
